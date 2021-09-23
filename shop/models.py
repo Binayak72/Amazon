@@ -32,5 +32,4 @@ class Event(models.Model):
     venue = models.CharField(max_length=255)
     manager = models.CharField(max_length=255)
     description = models.TextField()
-
-# hamle forgen key halnu paryo haina
+    done_by = models.ForeignKey(Shop.shop_name,)
