@@ -32,4 +32,4 @@ class Event(models.Model):
     venue = models.CharField(max_length=255)
     manager = models.CharField(max_length=255)
     description = models.TextField()
-    done_by = models.ForeignKey(Shop.shop_name,)
+    Shop = models.ForeignKey(Shop,on_delete=models.CASCADE)
