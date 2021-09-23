@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+This is front end. TEMPLATES
+{% for event in events %}
+    {{ event.name }}<br>
+    {{ event.date }}<br>
+    {{ event.venue }}<br>
+    {{ event.manager}}<br>
+    {{ event.description }}<br><br>
+{% endfor %}
+
+</body>
+</html>
